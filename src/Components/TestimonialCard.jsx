@@ -1,5 +1,5 @@
 import quotes from "../Images/quote-logo.png";
-import circle from "../images/circle.png";
+import circle from "../Images/circle.png";
 
 const TestimonialCard = (props) => {
   return (
