@@ -1,11 +1,18 @@
+import quotes from "../Images/quote-logo.png";
+import circle from "../images/circle.png";
+
 const TestimonialCard = (props) => {
   return (
     <>
-      <div className="testimonial_card">
-        <span>Images</span>
-        <p>{props.text}</p>
-        <div>
-          <div>Image</div>
+      <div className="t_card">
+        <span>
+          <img src={quotes} />
+        </span>
+        <p className="t_card_text">{props.text}</p>
+        <div className="t_bottom_wrapper">
+          <div>
+            <img src={circle} />
+          </div>
           <div>
             <h4>Jason Umon</h4>
             <p>CEO of Zeno World</p>

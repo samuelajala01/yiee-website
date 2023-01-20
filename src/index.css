@@ -1,13 +1,400 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    /* border: 1px solid red;     */
+}
+
+button{
+    border: unset;
+}
+
+.top_nav{
+    display: flex;
+    margin: auto 0;
+    justify-content: space-between;
+    line-height: 3rem;
+    padding: 0.5rem 3rem;
+}
+
+.logo{
+    font-size: 1.4rem;
+}
+
+.main_logo_img{
+    height: 1.4rem;
+}
+
+.top_nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.top_nav_item{
+    margin: 0 1.5rem;
+}
+
+.nav-btn{
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+.btn-1{
+    background-color: rgba(194, 219, 255, 1);
+    color: rgba(37, 124, 255, 1);
+}
+.btn-2{
+    background-color: rgba(37, 124, 255, 1);
+    color: white;
+}
+
+.hero_section{
+    text-align: center;
+    max-width: 40rem;
+    margin: auto;
+    margin-bottom: 8rem;
+}
+
+.hero_header{
+    font-size: 3rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.hero_description{
+ padding: 0 2rem;
+}
+
+.users_img_div{
+    margin: 1rem 0 3rem 0;
+    
+}
+
+.users_img_div p{
+    vertical-align: middle;
+}
+
+.hero_input_container{
+    border: 2px solid white;  
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+.hero_input_container input{
+padding: 0.5rem;
+margin-right: 4vw;
+}
+
+.hero_input_btn{
+    background-color: rgba(37, 124, 255, 1);
+    color: white;
+    padding: 0.5rem;
+}
+
+.myp_section{
+    padding: 0 6vw;
+    margin-bottom: 5rem;
+}
+
+.myp_wrapper{
+    display: flex;
+    margin-bottom: 4rem;
+}
+.myp_text_div{
+    padding: 1rem;
 }
 
 
-body{
-    background: #E5E5E5;
+.myp_text_div, .molecule_div{
+flex: 1
 }
+
+.myp_header{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.molecule_img{
+    display: flex;
+    margin: auto;
+}
+
+.card_wrapper{
+    display: flex;
+    text-align: center;
+    
+    gap: 5vw;
+    justify-content: space-between;
+}
+
+.card_header{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: rgba(37, 124, 255, 1);
+}
+
+.card_description{
+    font-size: 0.9rem;
+    
+}
+
+.stc_section{
+    padding: 0 6vw;
+}
+
+.stc_header, .stc_description{
+    text-align: center;
+    margin: auto;
+}
+
+.stc_header{
+    font-size: 1.7rem;
+}
+
+.stc_description{
+    max-width: 45vw;
+   margin-top: 1rem;
+   margin-bottom: 3rem;
+}
+
+.stc_nav{
+    border-bottom: 1px solid gray;
+    margin-bottom: 8rem;
+}
+
+.stc_nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.stc_nav_item:hover{
+ color: rgba(37, 124, 255, 1);
+}
+
+.stc_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 4vw;
+}
+
+.tinycard_wrapper{
+    padding: 0 4rem 0 4rem;
+}
+
+.tinycard{
+    margin-bottom: 3rem;
+    word-spacing: 0.3rem;
+}
+
+.tinycard_header{
+    color: rgba(37, 124, 255, 1);
+}
+
+.infocard{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+.learn_more{
+    color: rgba(37, 124, 255, 1);
+}
+
+.woman_img{
+    width: 27vw;
+    display: flex;
+    margin: auto;
+}
+
+.infocard_text_wrapper, .infocard_img_wrapper{
+    flex:1
+}
+
+.infocard_text_wrapper{
+    padding: 4.5rem;
+}
+
+.infocard_header{
+    font-size: 2.4rem;
+   
+}
+
+.infocard_text{
+    margin: 1.5rem 0;
+}
+
+.infocard_reverse{
+    flex-direction: row-reverse;
+}
+
+.stc_box{
+    text-align: center;
+    border: 1px solid gray;
+    margin: auto;
+    padding: 7rem 7vw;
+    width: fit-content;
+}
+
+.stc_box_header{
+    font-size: 2rem;
+   
+}
+
+.stc_box_text{
+    margin: 1.4rem 0;
+}
+
+.stc_box_btn{
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: rgba(37, 124, 255, 1);
+}
+
+.testimonials_section{
+    margin: 0 6vw;
+}
+
+.t_header, .t_tagname{
+    text-align: center;
+}
+
+.t_header{
+    font-size: 2.5rem;
+}
+
+.t_tagname{
+    margin: 2rem 0;
+}
+
+.t_card_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+}
+
+.t_card{
+    padding: 2rem;
+}
+
+.t_card_text{
+    margin: 1rem 0;
+}
+
+.t_bottom_wrapper{
+    display: flex;
+}
+
+.ctt_box{
+    margin: 4rem 6vw;
+    display: flex;
+    padding: 2.5rem;
+    gap: 4vw;
+    background-color: rgba(244, 241, 241, 1);
+}
+
+.ctt_box_1, .ctt_box_2{
+    flex: 1;
+}
+
+.ctt_box_1{
+    padding: 3.5rem;
+}
+
+.ctt_box_1 h2{
+    font-size: 2.5rem;
+}
+
+.ctt_btn{
+    display: block;
+    width: 100%;
+    padding: 0.6rem ;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer{

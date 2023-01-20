@@ -1,9 +1,9 @@
 const TinyCard = (props) => {
   return (
     <>
-      <div>
-        <h2>{props.title}</h2>
-        <p>{props.text}</p>
+      <div className="tinycard">
+        <h5 className="tinycard_header">{props.title}</h5>
+        <p className="tinycard_text">{props.text}</p>
       </div>
     </>
   );
